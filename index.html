@@ -1,14 +1,64 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    
+    <!-- Fontawesome & Boxicon -->
     <link rel="stylesheet" href="./styles/fontawesome/css/all.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Image Editor</title>
 </head>
 <body>
-    
+    <div class="card">
+        <h2 class="name">Image Editor</h2>
+        <div class="main">
+            <div class="controls">
+                <div class="filters">
+                    <h3 class="head-tools">Filters</h3>
+                    <div class="btns-filters">
+                        <button class="btn-filter btn-filter-s">Brightness</button>
+                        <button class="btn-filter">Saturation</button>
+                        <button class="btn-filter">Inversation</button>
+                        <button class="btn-filter">Grayscale</button>
+                    </div>
+                    <div class="range">
+                        <div class="head-number">
+                            <h3 class="head-range">Grayscale</h3>
+                            <h3 class="head-number">10%</h3>
+                        </div>
+                        <input type="range" class="bar-filters">
+                    </div>
+                </div>
+                <div class="rotate-flip">
+                    <h3 class="head-tools">Rotate & Flip</h3>
+                    <div class="btns-rotate-flip">
+                        <button class="btn-rotate"><i class="fa-sharp fa-solid fa-rotate-left"></i></button>
+                        <button class="btn-rotate"><i class="fa-sharp fa-solid fa-rotate-right"></i></button>
+                        <button class="btn-rotate"><i class='bx bx-reflect-vertical' ></i></button>
+                        <button class="btn-rotate"><i class='bx bx-reflect-horizontal'></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <!-- <img class="preview" src="#" alt="preview"> -->
+                <div class="preview-loading">
+                    <i class='bx bxs-copy'></i>
+                    <h3 class="txt-preview">Choose Image To Edit</h3>
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <div class="reset">
+                <button id="btn-reset" class="btn-r">RESET FILTERS</button>
+            </div>
+            <div class="select-download">
+                <button id="btn-choose" class="btn-r">CHOOSE IMAGE</button>
+                <button id="btn-download" class="btn-r">SAVE IMAGE</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
