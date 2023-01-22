@@ -15,30 +15,30 @@
     <div class="card">
         <h2 class="name">Image Editor</h2>
         <div class="main">
-            <div class="controls">
+            <div class="controls desable">
                 <div class="filters">
                     <h3 class="head-tools">Filters</h3>
                     <div class="btns-filters">
-                        <button class="btn-filter btn-filter-s">Brightness</button>
-                        <button class="btn-filter">Saturation</button>
-                        <button class="btn-filter">Inversation</button>
-                        <button class="btn-filter">Grayscale</button>
+                        <button id="brightness" class="btn-filter btn-filter-s">Brightness</button>
+                        <button id="saturation" class="btn-filter">Saturation</button>
+                        <button id="inversation" class="btn-filter">Inversation</button>
+                        <button id="grayscale" class="btn-filter">Grayscale</button>
                     </div>
                     <div class="range">
                         <div class="head-number">
-                            <h3 class="head-range">Grayscale</h3>
-                            <h3 class="head-number">10%</h3>
+                            <h3 class="head-range">Brightness</h3>
+                            <h3 class="head-value">100%</h3>
                         </div>
-                        <input type="range" class="bar-filters">
+                        <input type="range" class="bar-filters" value="50">
                     </div>
                 </div>
                 <div class="rotate-flip">
                     <h3 class="head-tools">Rotate & Flip</h3>
                     <div class="btns-rotate-flip">
-                        <button class="btn-rotate"><i class="fa-sharp fa-solid fa-rotate-left"></i></button>
-                        <button class="btn-rotate"><i class="fa-sharp fa-solid fa-rotate-right"></i></button>
-                        <button class="btn-rotate"><i class='bx bx-reflect-vertical' ></i></button>
-                        <button class="btn-rotate"><i class='bx bx-reflect-horizontal'></i></button>
+                        <button id="RL" class="btn-rotate"><i class="fa-sharp fa-solid fa-rotate-left"></i></button>
+                        <button id="RR" class="btn-rotate"><i class="fa-sharp fa-solid fa-rotate-right"></i></button>
+                        <button id="FV" class="btn-rotate"><i class='bx bx-reflect-vertical' ></i></button>
+                        <button id="FH" class="btn-rotate"><i class='bx bx-reflect-horizontal'></i></button>
                     </div>
                 </div>
             </div>

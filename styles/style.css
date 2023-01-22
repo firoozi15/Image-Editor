@@ -58,11 +58,16 @@ body{
     padding: 10px 15px;
 }
 
+.desable{
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
 .filters{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 100%; */
 }
 
 .head-tools{
@@ -85,11 +90,6 @@ body{
     font-size: 15px;
     cursor: pointer;
     transition: 0.2s;
-}
-
-.btn-filter:hover{
-    background-color: #dfdfdf;
-    color: #646464;
 }
 
 .btn-filter-s{
@@ -157,7 +157,7 @@ body{
     width: 65%;
     height: 100%;
     border-radius: 5px;
-    /* background-color: #5172E8; */
+    overflow: hidden;
 }
 
 .preview img {
@@ -248,12 +248,12 @@ body{
         flex-direction: column-reverse;
         justify-content: center;
     }
-
+    
     .preview{
         width: 100%;
         height: 350px;
     }
-
+    
     .controls{
         width: 100%;
         height: 52%;
